@@ -25,8 +25,8 @@
             bindings = <
 &kp GRAVE       &kp N1  &kp N2            &kp N3    &kp N4          &kp N5                               &kp N6   &kp N7          &kp N8     &kp N9     &kp N0         &kp BSLH
 &kp ESCAPE      &kp Q   &kp D             &kp R     &kp W           &kp B                                &kp J    &kp F           &kp U      &kp P      &kp SEMICOLON  &kp BSPC
-&kp TAB         &kp A   &kp S             &kp H     &kp T           &kp G                                &kp Y    &kp N           &kp E      &kp O      &kp I          &mt RCTRL SQT
-&kp LEFT_SHIFT  &kp Z   &kp X             &kp M     &kp C           &kp V      &kp C_MUTE    &kp C_PP    &kp K    &kp L           &kp COMMA  &kp DOT    &kp FSLH       &kp RSHFT
+&kp TAB         &kp A   &kp S             &kp H     &kp T           &kp G                                &kp Z    &kp N           &kp E      &kp O      &kp I          &mt RCTRL SQT
+&kp LEFT_SHIFT  &kp Y   &kp X             &kp M     &kp C           &kp V      &kp C_MUTE    &kp C_PP    &kp K    &kp L           &kp COMMA  &kp DOT    &kp FSLH       &kp RSHFT
                         &kp LEFT_CONTROL  &kp LALT  &mt LGUI MINUS  &kp SPACE  &lt 1 LBKT    &lt 2 RBKT  &kp RET  &mt RGUI EQUAL  &kp RALT   &kp RCTRL
             >;
 
