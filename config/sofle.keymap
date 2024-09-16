@@ -22,8 +22,6 @@
         dc-gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;  
         reset-gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;  
         busy-gpios = <&gpio0 5 GPIO_ACTIVE_HIGH>;  
-
-        # Definiere die fehlende 'pwr'-Property für den Stromversorgungspin
         pwr-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>; 
     };
 };
