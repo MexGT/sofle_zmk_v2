@@ -1,19 +1,17 @@
 // Device tree overlay for the right half of the Sofle keyboard with IL0323 display
 
-&spi1 {
-    status = "okay";
-    il0323: il0323@0 {
-        compatible = "gooddisplay,il0323";
-        reg = <0>;
-        label = "IL0323";
-        spi-max-frequency = <8000000>;
-        cs-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
-        dc-gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
-        reset-gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
-        busy-gpios = <&gpio0 5 GPIO_ACTIVE_HIGH>;
-
-        width = <296>;  // Adjust as needed for your display resolution
-        height = <128>;
-
-        pwr-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+&i2c1 {
+    ssd1306: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        label = "SSD1306_RIGHT";
+        width = <128>;
+        height = <32>;
+        segment-offset = <0>;
+        row-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <31>;
+        reset-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>;
+        dc-gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>;
     };
+};
