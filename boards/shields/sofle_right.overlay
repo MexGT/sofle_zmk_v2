@@ -15,3 +15,15 @@
         dc-gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>;
     };
 };
+
+
+&spi1 {
+    sk6812_strip: sk6812-strip {
+        compatible = "worldsemi,ws2812-spi";
+        label = "SK6812_STRIP";
+        chain-length = <29>;  // Anzahl der LEDs auf der rechten Seite
+        spi-max-frequency = <8000000>;
+        color-order = "GRB";
+        pixel-format = "RGB";
+    };
+};
